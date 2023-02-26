@@ -1,6 +1,55 @@
+/** Global Style start **/
+:root {
+    --gray-700: #383838;
+    --gray-200: #f6fbff;
+    --gray-500: #787870;
+    --pink-600: #fb0df1;
+    --white: #ffffff;
+    --black : #000000;
+    --pink:#B78D8D;
+    --green:#113537;
+    --mdc-typography-font-family: "Poppins", sans-serif;
+    --mdc-theme-primary: #272727;
+  }
+  
+  .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+    color: #c9238f;
+  }
+  
+  .title {
+    font-style: normal;
+    font-size: 1.025rem;
+    font-weight: 500;
+  }
+  
+  .subheading {
+    font-style: normal;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  @media screen and (min-width: 60em) {
+    .title {
+      font-size: 1.125rem;
+    }
+    .subheading {
+      font-size: 3rem;
+    }
+  }
+
 body {
     font-family: "Poppins", sans-serif;
   }
+  @media screen and (min-width: 60em) {
+    .title {
+      font-size: 1.125rem;
+    }
+    .subheading {
+      font-size: 3rem;
+    }
+  }
+
+  /** Global Style end **/
 
   /** header section start **/
   .header {
@@ -15,8 +64,14 @@ body {
   }
   
   .header-logo {
-    background: url();
+    font-family: 'Cinzel';
+    font-style: normal;
     height: 28px;
+    font-weight: 700;
+    font-size: 40px;
+    margin-left: 36px;
+    margin-top: 36px;
+    color: var(--black);
   }
   
   .header-nav {
@@ -38,6 +93,8 @@ body {
       justify-content: space-between;
     }
   }
+
+  
     /** header section end **/
 
   
@@ -46,10 +103,10 @@ body {
   padding: 2rem 0;
   /* width: 100%;
   min-height: 80vh; */
-  position: fixed;
+  position: absolute;
   width: 1856px;
   height: 1472px;
-  left: -266px;
+  left: -235px;
   top: -240px;
   background: url("background.png") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -58,11 +115,11 @@ body {
   background-size: cover;
 }
 .landing_front{
-  position: absolute;
+  position: absolute    ;
   width: 909px;
   height: 909px;
   left: 265px;
-  top: 119px;
+  margin-top: 119px;
   background: url(background2.png);
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -93,7 +150,431 @@ body {
   font-weight: 400;
   font-size: 96px;
   line-height: 129px;
-  color: #FFFFFF;
+  color: var(--white);
 }
 
-  /** landing image start **/
+.landing_subheading{
+    position: absolute;
+    width: 346px;
+    height: 44px;
+    margin-left: 289px;
+    margin-top: 798px;
+    margin-bottom: 67px;
+    margin-right: 274px;
+
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+/* identical to box height */
+
+
+    color: var(--white);
+}
+
+@media screen and (min-width: 50em) {
+    .header-nav {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  /** landing  end **/
+
+  /** Autism page start **/
+
+  .autism_landing{
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    left: 0px;
+    top: 1024px;
+
+    background: var(--pink);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  .autism_profile{
+    position: absolute;
+    width: 468px;
+    height: 685px;
+    left: 112px;
+    top: 1193px;
+
+    background: url(autism_profile.png);
+    filter: drop-shadow(7px 7px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+  }
+
+  .autism_content{
+    position: absolute;
+    width: 682.03px;
+    height: 616px;
+    left: 674px;
+    top: 1223.6px;
+
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 44px;
+
+    color: var(--white);
+
+    transform: rotate(-0.3deg);         
+
+  }
+  @media screen and (min-width: 50em) {
+    .header-nav {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+   /** Autism page end **/
+    /** about us  page start **/
+
+  .about_us_intro{
+    background: #F5F5F5;
+  }
+
+  .about_us_intro_content_1{
+    position: absolute;
+    width: 682.03px;
+    height: 84px;
+    left: 379px;
+    top: 2065.6px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+
+    color: var(--green);
+
+    transform: rotate(-0.3deg);
+  }
+
+  .about_us_intro_content_2{
+    position: absolute;
+    width: 644px;
+    height: 42px;
+    left: 376px;
+    top: 2154px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+
+    color: var(--green);
+
+  }
+
+  .about_us{
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    left: 0px;
+    top: 2311px;
+
+    background: var(--pink);
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+  }
+
+  .about_us_content1{
+    position: absolute;
+    width: 395px;
+    height: 56px;
+    left: 523px;
+    top: 2383px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+
+    color: var(--green);
+
+  }
+
+  .white_rect{
+    position: absolute;
+    width: 705px;
+    height: 492px;
+    left: 698px;
+    top: 2568px;
+
+    background: #D9D9D9;
+    border-radius: 10px;
+    background: url(white_rect.png);
+  }
+
+  .about_us-image{
+    position: absolute;
+    width: 620px;
+    height: 324px;
+    left: 741px;
+    top: 2652px;
+
+    background: url(about_us.png);
+    border-radius: 10px;        
+  }
+
+  .about_us_content{
+    position: absolute;
+    width: 589px;
+    height: 739px;
+    left: 72px;
+    top: 2507px;
+
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 49px;
+
+    color: #FFFFFF;
+  }
+
+  @media screen and (min-width: 50em) {
+    .about_us {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+     /** about us  page end **/
+        /**  stories  page start **/
+
+  .stories_background{
+    position: absolute;
+    width: 1440px;
+    height: 954px;
+    left: 2px;
+    top: 3335px;
+
+    background: #B78D8D;    
+  }
+
+  .stories_content{
+    position: absolute;
+    width: 502px;
+    height: 84px;
+    left: 468px;
+    top: 3422px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #113537;
+  }
+
+  .stories_1{
+    position: absolute;
+    width: 438px;
+    height: 559px;
+    left: -87px;
+    top: 3633px;
+    
+    background: url(stories_1.png);
+    filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    
+  }
+
+  .stories_2{
+    position: absolute;
+    width: 438px;
+    height: 559px;
+    left: 399px;
+    top: 3633px;
+    
+    background: url(stories_2.png);
+    filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+  }
+
+  .stories_3{
+    position: absolute;
+    width: 438px;
+    height: 559px;
+    left: 885px;
+    top: 3633px;
+    
+    background: url(stories_3.png);
+    filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+  }
+
+  .stories_4{
+    position: absolute;
+    width: 70px;
+    height: 559px;
+    left: 1371px;
+    top: 3633px;
+    
+    background: url(stories_4.png);
+    filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+  }
+
+   /**  stories  page end **/
+
+    /**  contact  page start **/
+  
+  .contact_background{
+    position: absolute;
+    width: 1439px;
+    height: 274px;
+    left: 1px;
+    top: 4289px;
+    
+    background: rgba(183, 141, 141, 0.5);
+  }
+.contact{
+    position: absolute;
+    width: 1206px;
+    height: 32px;
+    left: 358px;
+    top: 4500px;
+    
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    
+    color: #000000;
+}
+
+.demo_button{
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
+     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 13px 39px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 148px;
+    height: 48px;
+    left: 647px;
+    top: 4400px;
+    
+    background: #650D1B;
+    border-radius: 20px; 
+
+  
+      
+      
+    
+}
+
+.demo_button_content{
+    width: 70px;
+    height: 22px;
+    
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+
+
+
+   /**  contact  page end **/
+   /** scanning page start **/
+
+   .scan_button{
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
+     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 13px 39px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 248px;
+    height: 48px;
+    left: 610px;
+    top: 370px;
+    
+    background: #650D1B;
+    border-radius: 20px; 
+
+  
+      
+      
+    
+}
+
+.scan_button_content{
+    width: 200px;
+    height: 11px;
+    
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.scan_button_background{
+    margin-top: 5rem;
+    padding: 2rem 0;
+    /* width: 100%;
+    min-height: 80vh; */
+    position: fixed;
+    width: 1856px;
+    height: 1472px;
+    left: -235px;
+    top: -240px;
+    background: url("background.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+   /** scanning page end**/
