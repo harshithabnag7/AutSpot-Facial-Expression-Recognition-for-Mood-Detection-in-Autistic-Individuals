@@ -1,0 +1,99 @@
+body {
+    font-family: "Poppins", sans-serif;
+  }
+
+  /** header section start **/
+  .header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    width: 90%;
+    background: var(--white);
+  }
+  
+  .header-logo {
+    background: url();
+    height: 28px;
+  }
+  
+  .header-nav {
+    display: none;
+  }
+  
+  .header-nav a {
+    margin-left: 40px;
+  }
+  
+  .header-nav a:hover {
+    color: var(--pink-600);
+    text-decoration: underline;
+  }
+  
+  @media screen and (min-width: 50em) {
+    .header-nav {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+    /** header section end **/
+
+  
+.landing {
+  margin-top: 5rem;
+  padding: 2rem 0;
+  /* width: 100%;
+  min-height: 80vh; */
+  position: fixed;
+  width: 1856px;
+  height: 1472px;
+  left: -266px;
+  top: -240px;
+  background: url("background.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.landing_front{
+  position: absolute;
+  width: 909px;
+  height: 909px;
+  left: 265px;
+  top: 119px;
+  background: url(background2.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.landing_around_profile{
+  position: absolute;
+  width: 417.49px;
+  height: 278.25px;
+  left: 481px;
+  top: 224px;
+  background: url(around_profile.png);
+
+}
+.landing_title{
+  margin-left: 117px;
+  margin-top: 533px;
+  margin-bottom: 247px;
+  margin-right: 98px;
+  position: absolute;
+  width: 694px;
+  height: 129px;
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 129px;
+  color: #FFFFFF;
+}
+
+  /** landing image start **/
