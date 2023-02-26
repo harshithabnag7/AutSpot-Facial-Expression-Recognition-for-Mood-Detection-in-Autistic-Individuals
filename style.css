@@ -12,9 +12,9 @@
     --mdc-theme-primary: #272727;
   }
 
-  #overlay{
+  /* #overlay{
     position: relative;
-  }
+  } */
   
  
   .title {
@@ -446,18 +446,18 @@
   }
 .contact{
     position: absolute;
-    width: 1206px;
+    width: 1500px;
     height: 32px;
-    left: 390px;
-    top: 4500px;
+    left: 490px;
+    top: 4450px;
     
-    font-family: 'Cinzel';
-    font-style: normal;
+    font-family: "Poppins";
+    font-style: sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 14px;
     line-height: 32px;
     
-    color: #000000;
+    color: #650D1B ;
 }
 
 .demo_button{
