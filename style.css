@@ -11,11 +11,12 @@
     --mdc-typography-font-family: "Poppins", sans-serif;
     --mdc-theme-primary: #272727;
   }
-  
-  .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
-    color: #c9238f;
+
+  #overlay{
+    position: relative;
   }
   
+ 
   .title {
     font-style: normal;
     font-size: 1.025rem;
@@ -37,7 +38,7 @@
     }
   }
 
-body {
+.body {
     font-family: "Poppins", sans-serif;
   }
   @media screen and (min-width: 60em) {
@@ -53,14 +54,15 @@ body {
 
   /** header section start **/
   .header {
+    z-index: 1;
     display: flex;
-    position: fixed;
+    position: absolute;
     top: 0;
     align-items: center;
     justify-content: space-between;
     height: 5rem;
     width: 90%;
-    background: var(--white);
+    /* background: var(--white); */
   }
   
   .header-logo {
@@ -78,21 +80,21 @@ body {
     display: none;
   }
   
-  .header-nav a {
-    margin-left: 40px;
+  .header-nav a{
+    color: var(--green);
+    margin-left: 40px; 
+ 
   }
   
   .header-nav a:hover {
-    color: var(--pink-600);
-    text-decoration: underline;
+    color: var(--black);
+    transform:scale(1.5);
+    opacity:0.2;
+    /* filter:blur(5px);  */
+   
   }
   
-  @media screen and (min-width: 50em) {
-    .header-nav {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
+
 
   
     /** header section end **/
@@ -104,7 +106,7 @@ body {
   /* width: 100%;
   min-height: 80vh; */
   position: absolute;
-  width: 1856px;
+  width: 1700px;
   height: 1472px;
   left: -235px;
   top: -240px;
@@ -115,7 +117,7 @@ body {
   background-size: cover;
 }
 .landing_front{
-  position: absolute    ;
+  position: absolute;
   width: 909px;
   height: 909px;
   left: 265px;
@@ -446,7 +448,7 @@ body {
     position: absolute;
     width: 1206px;
     height: 32px;
-    left: 358px;
+    left: 390px;
     top: 4500px;
     
     font-family: 'Cinzel';
