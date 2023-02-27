@@ -26,8 +26,8 @@ def get_emotion():
         print(results[0]["solution"])
         solution = results[0]["solution"]
         mode = results[0]["mode"]
-       # emg_contact = results[0]["emg_number"]
-       # sms_send.send_alert(emg_contact)
+        emg_contact = results[0]["emg_number"]
+        sms_send.send_alert(emg_contact)
         if(mode == "picture"):
             url = open_harshitha.gen_image(solution)
             print(url)

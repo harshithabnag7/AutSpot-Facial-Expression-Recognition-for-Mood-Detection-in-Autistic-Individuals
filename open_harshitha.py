@@ -3,7 +3,7 @@ import openai
 import urllib.request
 from PIL import Image
 
-openai.api_key = "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"
+openai.api_key = "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"
 def gen_image(promt_text):
   response = openai.Image.create(
     prompt=promt_text,
