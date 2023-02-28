@@ -9,7 +9,7 @@ import sms_send
 import threading
 app = Flask(__name__)
 from pymongo import MongoClient
-client = MongoClient('mongodb+srv://rahulgowda4785:3t0KDthxRyiDrg85@autspot.u42dncc.mongodb.net/?retryWrites=true&w=majority')
+client = MongoClient('mongodb+srv://<USERNAME>:<Password>autspot.u42dncc.mongodb.net/?retryWrites=true&w=majority')
 dbname = client['Autism']
 collection_name = dbname["Userdata"]
 dector = Detect()
